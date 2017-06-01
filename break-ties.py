@@ -2,7 +2,7 @@
 #!/usr/bin/env python3
 
 import argparse
-import random
+import secrets
 
 
 def parser():
@@ -21,4 +21,4 @@ def main():
     """Control main execution of script."""
     argparser = parser()
     arguments = argparser.parse_args()
-    print(random.choice(arguments.candidates))
+    print(secrets.choice(arguments.candidates))
