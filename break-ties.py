@@ -21,4 +21,5 @@ def main():
     """Control main execution of script."""
     argparser = parser()
     arguments = argparser.parse_args()
-    print(random.choice(arguments.candidates))
+    
+    print(random.SystemRandom().choice(arguments.candidates))
