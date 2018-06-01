@@ -40,6 +40,10 @@ def convert(from_source, to_destination):
     for row in civicrm_reader:
         row = [col.strip() for col in row]
         email = row.pop()
+        if ',' in row[-1]:
+            row[-1] = row[-1].split(',')[0]
+        if '@' in row[-1]:
+            row[-1] = ''
         name = ' '.join(row)
         id = generate_unique_id()
         helios_writer.writerow([id, email, name])
