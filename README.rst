@@ -3,7 +3,7 @@
 =========================
 
 This repository contains the tools and documentation for the way the Python
-Software Foundation (the PSF) Elections are presently operated. This documennt
+Software Foundation (the PSF) Elections are presently operated. This document
 will cover the tools in the repository and the processes that the Election
 Administrator is responsible for.
 
@@ -17,26 +17,27 @@ that is freely available on GitHub_. Election administrators should log into
 Helios using one of the options on the front page.
 
 Once signed into Helios, a button should appear labeled "Create Election".
-Once you do you will be prompted for the following information:
+Click it, and then the administrator will be prompted for the following
+information:
 
-- "Short Name" - in the past we've used things like ``psf-board-2018``
+- "Short Name" - in the past adminstrators have used things like ``psf-board-2018``
 
 - "Name" - the display title, e.g., "Python Software Foundation Board of
   Directors Election 2018"
 
-- "Description" - in the past, we've used this to explain Approval voting and
+- "Description" - in the past, administrators used this to explain Approval voting and
   the importance of the election
 
-- "Type" - there are two here, so we use "Election"
+- "Type" - there are two here, so use "Election"
 
-- "Use voter aliases" - in the past we've used this option but it's not
+- "Use voter aliases" - in the past this option was used but it's not
   apparent if it's 100% necessary
 
 - "Randomize answer order" - this should help avoid bias in the ordering of
   candidate names, use this option
 
-- "Private?" - we don't want our election to be open to the public to vote on,
-  as a result, we want to check this box
+- "Private?" - PSF elections are not open to the public to vote on,
+  so check this box
 
 - "Help Email Address" - decide on who should be fielding emails in the event
   that someone needs help with the election, in the past this has been the
@@ -44,12 +45,12 @@ Once you do you will be prompted for the following information:
 
 - "Voting starts at" - this is the date and time that the election starts
 
-- "Voting ends at" - the date and time that the election ends. We use Anywhere
+- "Voting ends at" - the date and time that the election ends. Use Anywhere
   on Earth (AoE) to determine the end of the election. For example, if the
   election runs from 1 June until 10 June AoE, then the datetime for "Voting
   ends at" should be "11 June <year> 12:00 UTC".
 
-Once you've completed these, you can start filling out the questions for the
+Once these are complete, begin filling out the questions for the
 election.
 
 Adding a Question
@@ -58,12 +59,12 @@ Adding a Question
 Click "Questions (#)" (where ``#`` will be the number of questions already
 there) and add the first question.
 
-Here we'll fill out the question(s) on the ballot. For example in a Board of
-Directors Election, we'll fill out the name and link to their candidacy
+Here, fill out the question(s) on the ballot. For example in a Board of
+Directors Election, fill out the name and link to their candidacy
 statement on the PSF wiki. If there are 10 candidates, voters should be able
 to pick between 0 and 10 answers. The election should be an absolute election.
 
-If there are more questions on the ballot, use your judgement to determine how
+If there are more questions on the ballot, use judgement to determine how
 to add them.
 
 Setting up Voters
@@ -85,7 +86,7 @@ format::
     FirstName,LastName,Email
 
 So to generate a random voter ID for each voter and to format it
-appropriately, we have a tool in this repository to handle it called
+appropriately, there is a tool in this repository to handle it called
 ``convert-exported-csv-for-helios.py``. This will generate the necessary
 format for Helios from the CSV file the EA receives.
 
@@ -109,8 +110,8 @@ The following sub-sections will cover these in detail
 Adding Missed Voters
 --------------------
 
-Helios allows us to add new voters after an election has begun although we
-cannot alter the other details of the election or questions. The process for
+Helios allows us to add new voters after an election has begun although
+the other details of the election or questions cannot be altered. The process for
 adding new voters is the same as is detailed above in "Setting up Voters". The
 EA will receive a new file full of the details of the voters who were missed.
 Using that, the EA can generate a new CSV to upload to Helios using the same
