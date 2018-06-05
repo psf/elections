@@ -25,10 +25,10 @@ information:
 - "Name" - the display title, e.g., "Python Software Foundation Board of
   Directors Election 2018"
 
-- "Description" - in the past, administrators used this to explain Approval voting and
-  the importance of the election
+- "Description" - in the past, administrators used this to explain Approval
+  voting and the importance of the election
 
-- "Type" - there are two here, so use "Election"
+- "Type" - there are two options here, use "Election"
 
 - "Use voter aliases" - in the past this option was used but it's not
   apparent if it's 100% necessary
@@ -105,7 +105,7 @@ progress, a few things may happen:
 
 - Some voters may need you to send/re-send their ballot notification email
 
-The following sub-sections will cover these in detail
+The following sub-sections will cover these in detail.
 
 Adding Missed Voters
 --------------------
@@ -168,7 +168,7 @@ Let's say that there is a 4 way tie between "Candidate 0", "Candidate 3",
 "Candidate 8", and "Candidate 12" and we need 2 more people to round out the
 total, then we would do::
 
-    python3 breka-ties.py -n 2 \
+    python3 break-ties.py -n 2 \
         -c "Candidate 0" \
         -c "Candidate 3" \
         -c "Candidate 8" \
