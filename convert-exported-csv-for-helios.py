@@ -44,9 +44,16 @@ def convert(from_source, to_destination):
             row[-1] = row[-1].split(',')[0]
         if '@' in row[-1]:
             row[-1] = ''
-        name = ' '.join(row)
-        id = generate_unique_id()
-        helios_writer.writerow([id, email, name])
+        userid = generate_unique_id()
+        # NOTE(sigmavirus24): We strip here because if the name is ' ' we want
+        # to be able to easily check for an empty name. In that case, we want
+        # to give the voter a name to ensure they receive a ballot.
+        # See also:
+        # https://github.com/benadida/helios-server/issues/197#issuecomment-396616993
+        name = ' '.join(row).strip()
+        if name == '':
+            name = f'PSF Voter {userid}'
+        helios_writer.writerow([userid, email, name])
 
 
 def main():
