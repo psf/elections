@@ -169,7 +169,7 @@ the election period.
 ## Closing an Election
 
 The end of an election requires the EA to verify the results of the election
-with Helios and then present the results to the Executive Director of the PSF.
+with OpaVote and then present the results to the Executive Director of the PSF.
 The Executive Director will then announce the results to the community.
 At that time, the `🌎 Publish Results` button on OpaVote can be used to
 publish the full results to all voters.
@@ -179,19 +179,17 @@ publish the full results to all voters.
 The PSF Bylaws_ state that one-third (1/3) of the members elligible to vote
 will constitute a quorum. See also:
 
-.. epigraph::
-
-    Except as otherwise required by law, by the Certificate of Incorporation
-    or by these Bylaws, one-third (1/3) of the members entitled to vote (the
-    voting members), represented in person or represented by proxy, shall
-    constitute a quorum at a meeting of members.
-
-    For electronic votes, a quorum shall be reached as soon as one-third (1/3)
-    of the members entitled to vote (the voting members) have cast their vote.
-    If the voting period ends before a quorum is reached, the vote is declared
-    void.
-
-    -- Python Software Foundation Bylaws, Section 3.9. Member Quorum
+> Except as otherwise required by law, by the Certificate of Incorporation
+> or by these Bylaws, one-third (1/3) of the members entitled to vote (the
+> voting members), represented in person or represented by proxy, shall
+> constitute a quorum at a meeting of members.
+>
+> For electronic votes, a quorum shall be reached as soon as one-third (1/3)
+> of the members entitled to vote (the voting members) have cast their vote.
+> If the voting period ends before a quorum is reached, the vote is declared
+> void.
+>
+> -- Python Software Foundation Bylaws, Section 3.9. Member Quorum
 
 For example, if there are 999 voters in an election, there must be 333 votes
 cast at least in order to declare quorum.
