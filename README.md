@@ -174,6 +174,14 @@ The Executive Director will then announce the results to the community.
 At that time, the `🌎 Publish Results` button on OpaVote can be used to
 publish the full results to all voters.
 
+> [!CAUTION]
+> OpaVote does not retain history of elections. Ensure that you retrieve
+> a copy of the `voter_list.csv` from the `All voter statistics` section of
+> the election management dashboard. Store it somewhere safe that future
+> election administrators or PSF staff will have access to.
+> 
+> This data is pertienet to tracking voter participation over time.
+
 ### Achieving Quorum
 
 The PSF Bylaws_ state that one-third (1/3) of the members elligible to vote
